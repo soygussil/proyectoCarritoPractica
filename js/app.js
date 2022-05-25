@@ -59,7 +59,7 @@ function leerDatosCurso(curso) {
   if (existe) {
     //actualizamos la cantidad
     const cursos = articulosCarrito.map((curso) => {
-      if ((curso) => curso.id === infoCurso.id) {
+      if (curso.id === infoCurso.id) {
         curso.cantidad++; //Retorna objeto actualizado
         return curso;
       } else {
